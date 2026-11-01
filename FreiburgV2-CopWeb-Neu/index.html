@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08111f">
+  <meta name="description" content="FreiburgV2 Cop-Web – Das Portal für unseren FiveM Roleplay Server.">
+  <title>FreiburgV2 Cop-Web | Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#start" aria-label="FreiburgV2 Startseite">
+      <span class="brand-mark">⌁</span><span class="brand-name">Freiburg<span>V2</span><small>COP-WEB</small></span>
+    </a>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen">☰</button>
+    <nav id="mainNav">
+      <a class="nav-link active" href="#start">⌂ <span>Startseite</span></a>
+      <a class="nav-link" href="#news">▤ <span>News</span></a>
+      <a class="nav-link" href="#bereiche">♙ <span>Informationen</span></a>
+      <a class="nav-link" href="#regeln">▦ <span>Serverregeln</span></a>
+      <a class="nav-link" href="#team">✦ <span>Team</span></a>
+      <a class="nav-link" href="#kontakt">✉ <span>Kontakt</span></a>
+    </nav>
+    <button class="btn btn-primary top-login" data-open-auth="login">♟ Anmelden</button>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">WILLKOMMEN AUF DEM</p>
+        <h1>FreiburgV2 <span>Cop-Web</span></h1>
+        <p class="subtitle">Dein Portal für den FiveM Roleplay Server – FreiburgV2</p>
+        <div class="blue-rule"></div>
+        <p class="intro">Informiere dich, melde dich an und werde Teil unserer Blaulichtfamilie in Freiburg!</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-open-auth="register">♟+ Jetzt registrieren</button>
+          <a class="btn btn-outline" href="#bereiche">Mehr erfahren <span>⌄</span></a>
+        </div>
+        <div class="status-line"><span class="status-dot"></span> Portal-Demo · Willkommen bei FreiburgV2</div>
+      </div>
+      <aside class="auth-card" id="authCard">
+        <div class="auth-heading"><span class="lock-icon">▣</span><div><h2 id="authTitle">Anmeldung</h2><p>Melde dich mit deinem Konto an, um weitere Funktionen zu entdecken.</p></div></div>
+        <form id="authForm">
+          <label class="field"><span>Benutzername</span><input id="username" name="username" autocomplete="username" placeholder="Benutzername" required minlength="3"></label>
+          <label class="field"><span>Passwort</span><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Passwort" required minlength="6"></label>
+          <label class="field register-only" id="confirmField"><span>Passwort wiederholen</span><input id="confirmPassword" type="password" autocomplete="new-password" placeholder="Passwort wiederholen"></label>
+          <button class="btn btn-primary submit-btn" type="submit" id="authSubmit">→ Jetzt einloggen</button>
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+        </form>
+        <div class="or-divider"><span></span> oder <span></span></div>
+        <button class="btn btn-outline full-width" id="switchAuth">♟+ Noch kein Konto? Registrieren</button>
+        <p class="demo-note">Hinweis: Diese ZIP-Version ist eine Frontend-Demo. Konten werden nicht sicher auf einem Server gespeichert.</p>
+      </aside>
+    </section>
+
+    <section class="quick-cards section-wrap" id="bereiche">
+      <article class="feature-card police"><div class="feature-icon">✪</div><div><h3>Unsere Polizei</h3><p>Für deine Sicherheit in Freiburg.</p><a href="#team">Mehr erfahren <span>→</span></a></div></article>
+      <article class="feature-card fire"><div class="feature-icon">♨</div><div><h3>Unsere Feuerwehr</h3><p>Retten. Löschen. Bergen.</p><a href="#team">Mehr erfahren <span>→</span></a></div></article>
+      <article class="feature-card ems"><div class="feature-icon">✚</div><div><h3>Unser Rettungsdienst</h3><p>Schnelle Hilfe – rund um die Uhr.</p><a href="#team">Mehr erfahren <span>→</span></a></div></article>
+      <article class="feature-card info"><div class="feature-icon">ⓘ</div><div><h3>Wichtige Informationen</h3><p>Alles, was du wissen musst.</p><a href="#regeln">Mehr erfahren <span>→</span></a></div></article>
+    </section>
+
+    <section class="content-section section-wrap" id="news">
+      <div class="section-heading"><div><p class="eyebrow">BLEIB AUF DEM LAUFENDEN</p><h2>Neuigkeiten <span>& Updates</span></h2></div><span class="section-label">FreiburgV2 Portal</span></div>
+      <div class="news-grid">
+        <article class="news-card"><div class="news-tag">COMMUNITY</div><h3>Willkommen bei FreiburgV2</h3><p>Hier findest du zukünftig aktuelle Ankündigungen, Events und wichtige Informationen rund um unseren Roleplay-Server.</p><span class="news-date">Neuigkeiten · FreiburgV2</span></article>
+        <article class="news-card"><div class="news-tag">SERVER</div><h3>Dein Einstieg ins Roleplay</h3><p>Lies die Serverregeln und informiere dich über unsere Abteilungen, bevor du deinen Dienst beginnst.</p><a href="#regeln">Zu den Regeln →</a></article>
+        <article class="news-card"><div class="news-tag">PORTAL</div><h3>Ein zentraler Anlaufpunkt</h3><p>Das Cop-Web soll Informationen, Bewerbungen und interne Funktionen an einem Ort bündeln.</p><a href="#kontakt">Kontakt aufnehmen →</a></article>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap split-section" id="regeln">
+      <div><p class="eyebrow">FAIR PLAY & RESPEKT</p><h2>Unsere <span>Serverregeln</span></h2><p class="muted">Damit alle gemeinsam ein gutes Roleplay erleben können, gelten klare Regeln für den Umgang miteinander.</p></div>
+      <div class="rules-list">
+        <div><b>01</b><span><strong>Respektvoll bleiben</strong><small>Behandle andere Spieler freundlich und fair.</small></span></div>
+        <div><b>02</b><span><strong>Roleplay ernst nehmen</strong><small>Spiele Situationen nachvollziehbar und im Charakter.</small></span></div>
+        <div><b>03</b><span><strong>Teamentscheidungen beachten</strong><small>Bei Fragen oder Problemen wende dich an das Team.</small></span></div>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap" id="team">
+      <div class="section-heading"><div><p class="eyebrow">DIE BLAULICHTFAMILIE</p><h2>Unsere <span>Abteilungen</span></h2></div></div>
+      <div class="department-grid">
+        <div class="department"><span class="dept-symbol blue">✪</span><h3>Landespolizei</h3><p>Ordnung, Sicherheit und Ermittlungen.</p></div>
+        <div class="department"><span class="dept-symbol red">♨</span><h3>Berufsfeuerwehr</h3><p>Retten, löschen, bergen und schützen.</p></div>
+        <div class="department"><span class="dept-symbol green">✚</span><h3>Rettungsdienst</h3><p>Medizinische Hilfe und Versorgung.</p></div>
+      </div>
+    </section>
+
+    <section class="contact-banner section-wrap" id="kontakt"><div><p class="eyebrow">DU HAST FRAGEN?</p><h2>Wir helfen dir gerne weiter.</h2><p>Kontaktiere das FreiburgV2-Team über eure offiziellen Community-Kanäle.</p></div><button class="btn btn-primary" data-contact>Kontakt ansehen →</button></section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#start"><span class="brand-mark">⌁</span><span class="brand-name">Freiburg<span>V2</span><small>COP-WEB</small></span></a><div class="footer-copy">© <span id="year"></span> FreiburgV2 Cop-Web. Alle Rechte vorbehalten.<small>Ein Community-Portal für FreiburgV2 Roleplay.</small></div><a class="back-top" href="#start">Nach oben ↑</a></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
